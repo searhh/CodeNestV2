@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNest - انشاء مشاريع البرمجة</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #about {
+            background-color: #ffffff;
+            border-bottom: 2px solid #007bff;
+        }
+
+        #features {
+            background-color: #f9f9f9;
+        }
+
+        .feature {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .feature h3 {
+            color: #007bff;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>CodeNest</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">عن التطبيق</a></li>
+                    <li><a href="#features">الميزات</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>عن تطبيق CodeNest</h2>
+            <p>CodeNest هو تطبيق مبتكر يساعدك على إنشاء مشاريع في أي لغة من لغات البرمجة الشهيرة. سواء كنت تتعلم البرمجة أو تبحث عن مشروع جاهز للتنفيذ، فإن CodeNest يوفر لك الأدوات اللازمة لإنشاء وتطوير مشاريعك بكل سهولة.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>الميزات</h2>
+            <div class="feature">
+                <h3>دعم لجميع لغات البرمجة</h3>
+                <p>سواء كنت تعمل بلغة Python أو JavaScript أو C++ أو أي لغة أخرى، فإن CodeNest يدعم جميع اللغات البرمجية لإنشاء مشاريعك بسرعة.</p>
+                <div>
+                    <img src="img/py.png" alt="Python">
+                    <img src="img/r.png" alt="R">
+                    <img src="img/sh.png" alt="Shell">
+                    <img src="img/rb.png" alt="Ruby">
+                    <img src="img/ts.png" alt="TypeScript">
+                    <img src="img/kt.png" alt="Kotlin">
+                    <img src="img/php.png" alt="PHP">
+                    <img src="img/html.png" alt="HTML">
+                    <img src="img/java.png" alt="Java">
+                    <img src="img/go.png" alt="Go">
+                    <img src="img/cs.png" alt="C#">
+                    <img src="img/cpp.png" alt="C++">
+                </div>
+            </div>
+            <div class="feature">
+                <h3>واجهة مستخدم سهلة</h3>
+                <p>يتميز CodeNest بواجهة مستخدم بسيطة وسهلة الاستخدام، مما يجعل تجربة إنشاء المشاريع ممتعة وسلسة.</p>
+            </div>
+            <div class="feature">
+                <h3>إمكانية تخصيص المشاريع</h3>
+                <p>يمكنك تخصيص المشاريع التي تنشئها بسهولة لتناسب احتياجاتك الخاصة، من خلال تخصيص الأكواد والإعدادات.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="img/icon.png" alt="CodeNest Icon" style="width: 50px; height: 50px;">
+            <p>جميع الحقوق محفوظة © 2025 - <a href="#">CodeNest</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript functionality
+        document.querySelectorAll("nav ul li a").forEach(function(link) {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                let target = document.querySelector(link.getAttribute("href"));
+                window.scrollTo({
+                    top: target.offsetTop - 20,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
